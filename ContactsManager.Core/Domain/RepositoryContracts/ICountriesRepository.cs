@@ -11,27 +11,27 @@ namespace ContactsManager.Core.Domain.RepositoryContracts
         /// Adds a new country object to the data store
         ///</summary>
         ///<param name="country">Country to add to the data store</param>
-        ///<return>The country that is added will be returned as Country entity</return>
+        ///<returns>The country that is added will be returnsed as Country entity</returns>
         Task<Country> AddCountry(Country country);
 
         ///<summary>
-        /// Returns a country object based on the given country id;otherwise returns null
+        /// returnss a country object based on the given country id;otherwise returnss null
         ///</summary>
         ///<param name="countryId">Country to search</param>
-        ///<return>Matching country or null</return>
+        ///<returns>Matching country or null</returns>
         Task<Country?> GetCountryByCountryId(Guid countryId);
 
         ///<summary>
-        /// Returns a country object based on the given country name
+        /// returnss a country object based on the given country name
         ///</summary>
         ///<param name="countryName">Country name to search</param>
-        ///<return>Return the country object or null</return>
+        ///<returns>returns the country object or null</returns>
         Task<Country?> GetCountryByName(string countryName);
 
         ///<summary>
         ///Get all the countries object</summary>
         ///</summary>
-        ///<return>Return the list of country</return>
+        ///<returns>returns the list of country</returns>
         Task<List<Country>> GetAllCountries();
     }
 }
